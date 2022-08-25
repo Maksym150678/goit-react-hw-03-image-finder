@@ -2,7 +2,7 @@ import { Component } from 'react';
 import PropTypes from 'prop-types';
 import styles from './image-gallery.module.scss';
 
-export default class ImageGalleryItem extends Component {
+class ImageGalleryItem extends Component {
   getDataValue = ({ target }) => {
     this.props.onClickFunc(target.dataset.largeimg);
   };
@@ -29,3 +29,5 @@ ImageGalleryItem.propTypes = {
   url: PropTypes.string,
   onClickFunc: PropTypes.func,
 };
+
+export default ImageGalleryItem;

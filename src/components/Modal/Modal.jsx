@@ -2,7 +2,7 @@ import { Component } from 'react';
 import PropTypes from 'prop-types';
 import styles from './modal.module.scss';
 
-export default class Modal extends Component {
+class Modal extends Component {
   componentDidMount() {
     window.addEventListener('keydown', this.modalClose);
   }
@@ -41,3 +41,5 @@ Modal.propTypes = {
   src: PropTypes.string,
   onModalFunc: PropTypes.func,
 };
+
+export default Modal;
